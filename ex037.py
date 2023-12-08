@@ -8,14 +8,17 @@ print('PROCESSANDO...')
 time.sleep(2)
 print('-' *20)
 if base == 1:
-   binar = bin(num).replace('0b', '')
+   binar = bin(num)[2:]
    print('Convertendo para bínario: {}'.format(binar))
    print('-' *20)
 elif base == 2:
-    octal = oct(num)
+    octal = oct(num)[2:]
     print('Convertendo para octal: {}'.format(octal.upper()))
     print('-' *20)
 elif base == 3:
-    hexad = hex(num)
+    hexad = hex(num)[2:]
     print('Convertendo para hexadecimal: {}'.format(hexad.upper()))
+    print('-' *20)
+else:
+    print('Opção invalida, tente novamente!')
     print('-' *20)
