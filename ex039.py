@@ -1,5 +1,5 @@
-import datetime
-ano = datetime.date.today().year
+from datetime import date
+ano = date.today().year
 nasc = int(input('Digite o seu ano de nascimento: '))
 idade = ano - nasc
 if idade < 18:
